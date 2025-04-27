@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hitchhiking – one platform for real world mobility</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-white text-[#0a0a0a] font-[Montserrat]">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hitchhiking – platform for your mobility</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-white text-[#0a0a0a] font-[Montserrat]">
 
-<header class="max-w-[1200px] mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-	<h3 class="text-[#25A8D9] font-bold text-xl">
-		<a href="https://hitchhiking.app" class="no-underline text-[#25A8D9]">
-			hitchhiking
-		</a>
-	</h3>
+		<header class="max-w-[1200px] mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+			<h3 class="text-[#25A8D9] font-bold text-xl">
+				<a href="https://hitchhiking.app" class="no-underline text-[#25A8D9]">
+					hitchhiking
+				</a>
+			</h3>
+			
+			<div class="md:hidden flex items-center" id="burgerMenuButton">
+				<button class="flex flex-col gap-1">
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+				</button>
+			</div>
 
-  <nav class="flex-1 flex flex-col md:flex-row justify-center items-center gap-4">
-    <a href="https://hitchhiking.app" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Home</a>
-    <a href="https://hitchhiking.app/hitchhiking.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">hitchhiking</a>
-    <a href="https://hitchhiking.app/corpohiking.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">corpohiking</a>
-    <a href="https://hitchhiking.app/contacts.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Contact</a>
-  </nav>
-  <a href="https://hitchhiking.app/contacts.html" class="px-6 py-2 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all whitespace-nowrap shadow-lg">Stay updated</a>
-</header>
+			<nav class="flex-1 md:flex flex-col md:flex-row justify-center items-center gap-4 hidden" id="navMenu">
+				<a href="https://hitchhiking.app" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Home</a>
+				<a href="https://hitchhiking.app/hitchhiking" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">hitchhiking</a>
+				<a href="https://hitchhiking.app/corpohiking" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">corpohiking</a>
+				<a href="https://hitchhiking.app/contacts" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Contact</a>
+			</nav>
+		
+			<a href="https://hitchhiking.app/contacts.html" class="px-6 py-2 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all whitespace-nowrap shadow-lg">Stay updated</a>
+		</header>
 
-<section id="relume" class="px-[5%] pt-16 pb-6 md:pt-24 md:pb-8 lg:pt-28 lg:pb-10">
-  <div class="container flex flex-col items-center">
-    <div class="rb-12 mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
-      <h1 class="mb-5 text-4xl font-bold md:mb-6 md:text-5xl lg:text-4xl">
-        Hitchhiking – one platform for real world mobility
-      </h1>
-      <p class="md:text-md">
-        hitchhiking connects people for journeys. Experience the freedom to
-        share rides or send packages anywhere, anytime.
-      </p>
-      <div class="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
-  <button
-    class="px-6 py-3 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all shadow-lg"
-    title="Contacts"
-  >
-    Contacts
-  </button>
-</div>
+		<section id="relume" class="px-[5%] pt-16 pb-6 md:pt-24 md:pb-8 lg:pt-28 lg:pb-10">
+			<div class="container flex flex-col items-center">
+				<div class="rb-12 mb-12 max-w-lg text-center md:mb-18 lg:mb-20">
+					<h1 class="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-4xl">
+						Hitchhiking – one platform for real world mobility
+					</h1>
+					<p class="md:text-md">
+						hitchhiking connects people for journeys. Experience the freedom to share rides or send packages anywhere, anytime.
+					</p>
+					<div class="mt-6 flex items-center justify-center gap-x-4 md:mt-8">
+						<button
+							class="px-6 py-3 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all shadow-lg"
+							title="Contacts"
+						>
+							Contacts
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    </div>
-  </div>
-</section>
+		<section class="px-[0%] pt-0 pb-24 overflow-hidden">
+			<div class="flex flex-col gap-5">
+				<div class="flex flex-wrap md:flex-nowrap justify-start md:justify-start gap-5 overflow-hidden">
+					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh1.png" alt="Image 1" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh2.png" alt="Image 2" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh3.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh6.png" alt="Image 4" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+				</div>
 
-<section class="px-[0%] pt-0 pb-24 overflow-hidden">
-  <div class="flex flex-col gap-5">
-
-    <div class="flex flex-wrap md:flex-nowrap justify-start md:justify-start gap-5 overflow-hidden">
-      <div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh1.png" alt="Image 1" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh2.png" alt="Image 2" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="hidden md:block relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh3.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="hidden md:block relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh6.png" alt="Image 4" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-    </div>
-
-    <div class="flex flex-wrap md:flex-nowrap justify-end md:justify-end gap-5 overflow-hidden">
-      <div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh6.png" alt="Image 5" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh5.png" alt="Image 6" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="hidden md:block relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh4.png" alt="Image 7" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-      <div class="hidden md:block relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
-        <img src="hh7.png" alt="Image 8" class="absolute inset-0 w-full h-full object-cover" />
-      </div>
-    </div>
-  </div>
-</section>
+				<div class="flex flex-wrap md:flex-nowrap justify-end md:justify-end gap-5 overflow-hidden">
+					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh6.png" alt="Image 5" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh5.png" alt="Image 6" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh4.png" alt="Image 7" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+					<div class="relative w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+						<img src="hh7.png" alt="Image 8" class="absolute inset-0 w-full h-full object-cover" />
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
-<section id="relume" class="px-[5%] py-16 pb-8 md:py-12 lg:pt-16 lg:pb-8">
+<section class="px-[5%] py-16 pb-8 md:py-12 lg:pt-16 lg:pb-8">
   <div class="container">
     <div class="mx-auto w-full max-w-lg overflow-x-auto text-center">
-      <h1 class="mb-5 text-4xl font-bold md:mb-6 md:text-5xl lg:text-4xl">
+      <h1 class="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-4xl">
         The idea💡
       </h1>
     </div>
@@ -108,20 +114,20 @@
   </div>
 </section>
 
-<section id="relume" class="px-[5%] pt-16 pb-8 md:pt-24 md:pb-12 lg:pt-28 lg:pb-16">
+<section class="px-[5%] pt-16 pb-8 md:pt-24 md:pb-12 lg:pt-28 lg:pb-16">
   <div class="container">
     <div class="mx-auto w-full max-w-lg overflow-x-auto text-center">
-      <h1 class="mb-5 text-4xl font-bold md:mb-6 md:text-5xl lg:text-4xl">Our products 📦</h1>
+      <h1 class="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-4xl">Our products 📦</h1>
     </div>
   </div>
 </section>
 
-<section id="relume" class="px-[5%] py-12 shadow-lg md:py-16 lg:py-20 bg-[#DDF2FA]">
+<section class="px-[10%] lg:px-[5%] py-12 shadow-lg md:py-16 lg:py-20 bg-[#DDF2FA]">
   <div class="container">
     <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
       <div>
         <div class="mb-5 md:mb-6 text-4xl">👍</div>
-        <h2 class="mb-4 text-3xl md:text-4xl lg:text-4xl font-bold">
+        <h2 class="mb-4 text-2xl md:text-4xl lg:text-4xl font-bold">
           Discover the routes and delivery with <span class="text-[#25A8D9]">hitchhiking</span>
         </h2>
         <p class="md:text-md">
@@ -133,22 +139,22 @@
           </button>
         </div>
       </div>
-      <div class="scale-[0.8]">
+      <div class="scale-[1] lg:scale-[0.8]">
         <img src="hh3.png" class="w-full rounded-[3rem] object-cover" alt="Relume placeholder image" />
       </div>
     </div>
   </div>
 </section>
 
-<section class="px-[5%] py-12 shadow-lg md:py-16 lg:py-20 bg-[#C2E1F8]">
+<section class="px-[10%] lg:px-[5%] py-12 shadow-lg md:py-16 lg:py-20 bg-[#C2E1F8]">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-x-20">
-      <div class="order-2 md:order-1 scale-[0.8]">
+      <div class="order-2 md:order-1 scale-[1] lg:scale-[0.8]">
         <img src="hh8.png" class="w-full rounded-[3rem] object-cover"/>
       </div>
       <div class="order-1 md:order-2">
         <div class="mb-5 md:mb-6 text-4xl">💼</div>
-        <h2 class="mb-4 text-3xl md:text-4xl lg:text-4xl font-bold">
+        <h2 class="mb-4 text-2xl md:text-4xl lg:text-4xl font-bold">
           Organize flexible group travels with <span class="text-[#3E5D6A]">corpohiking</span>
         </h2>
         <p class="md:text-md">
@@ -165,15 +171,15 @@
 </section>
 
 
-<section id="relume" class="px-[5%] pt-16 pb-0 md:pt-24 md:pb-8 lg:pt-28 lg:pb-10">
+<section class="px-[5%] pt-16 pb-0 md:pt-24 md:pb-8 lg:pt-28 lg:pb-10">
   <div class="container">
     <div class="mx-auto w-full max-w-lg overflow-x-auto text-center">
-      <h1 class="mb-3 text-4xl font-bold md:mb-6 md:text-5xl lg:text-4xl">Timeline 🗓️</h1>
+      <h1 class="mb-5 text-3xl font-bold md:mb-6 md:text-4xl lg:text-4xl">Timeline 🗓️</h1>
     </div>
   </div>
 </section>
 
-<section id="relume" class="overflow-hidden px-[5%] py-18 md:py-24 lg:py-10 lg:pb-24">
+<section class="overflow-hidden px-[7%] lg:px-[5%] py-18 md:py-24 lg:py-10 lg:pb-24">
     <div class="relative grid auto-cols-fr grid-flow-row grid-cols-1 items-center justify-center md:grid-flow-col md:grid-cols-[max-content_1fr] md:justify-normal">
       <div class="relative hidden md:grid md:grid-cols-1 md:gap-4">
         <div class="flex flex-col items-center md:w-full md:flex-row">
@@ -271,14 +277,14 @@
   </div>
 </section>
 
-		<footer id="relume" class="px-[5%] py-12 md:py-18 lg:py-20 bg-[#032B3F] text-white">
+		<footer class="px-[5%] py-12 md:py-18 lg:py-20 bg-[#032B3F] text-white">
 			<div class="container">
 				<div class="grid grid-cols-1 items-start justify-between gap-x-[8vw] gap-y-12 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:grid-cols-[1fr_0.5fr] lg:pb-20">
 					<div class="flex flex-col items-start gap-3 text-white">
-						<a href="https://hitchhiking.app" class="text-white text-sm font-medium hover:underline">Home</a>
-						<a href="https://hitchhiking.app/hitchhiking.html" class="text-white text-sm font-medium hover:underline">hitchhiking</a>
-						<a href="https://hitchhiking.app/corpohiking.html" class="text-white text-sm font-medium hover:underline">corpohiking</a>
-						<a href="https://hitchhiking.app/contacts.html" class="text-white text-sm font-medium hover:underline">Contact</a>
+						<a href="https://hitchhiking.app" class="text-white text-sm font-medium hover:text-[#25A8D9]">Home</a>
+						<a href="https://hitchhiking.app/hitchhiking.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">hitchhiking</a>
+						<a href="https://hitchhiking.app/corpohiking.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">corpohiking</a>
+						<a href="https://hitchhiking.app/contacts.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">Contact</a>
 					</div>
 
 					<div class="max-w-md lg:min-w-[25rem]">
@@ -294,11 +300,12 @@
 								/>
 							</div>
 							<button
+								type="submit"
 								class="rounded-[1.75rem] inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-white text-white bg-[#052F41] hover:bg-[#1e90c7] px-5 py-2"
 								title="Subscribe"
 							>Subscribe</button>
 						</form>
-						<p class="text-xs text-gray-300">By subscribing you agree to with our Privacy Policy</p>
+						<p class="text-xs text-gray-300">By subscribing you agree with our Privacy Policy</p>
 					</div>
 				</div>
 
@@ -306,12 +313,32 @@
 
 				<div class="flex flex-col items-start justify-start pt-6 pb-4 text-sm text-white md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
 					<ul class="grid grid-flow-row grid-cols-[max-content] gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center">
-						<li><a href="#" class="hover:underline hover:text-[#25A8D9] transition-colors">Privacy Policy</a></li>
-						<li><a href="#" class="hover:underline hover:text-[#25A8D9] transition-colors">Cookies Settings</a></li>
+						<li><a href="privacy_policy.md" target="_blank" class="hover:text-[#25A8D9] transition-colors">Privacy Policy</a></li>
+						<li><a href="cookies_settings.md" target="_blank" class="hover:text-[#25A8D9] transition-colors">Cookies Settings</a></li>
 					</ul>
 					<p class="text-sm text-gray-400 mt-4 md:mt-0">© 2025 Hitchhiking. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
     </body>
+	<script type="text/javascript">
+		document.getElementById('form').addEventListener('submit', function(event) {
+		event.preventDefault();
+
+		const serviceID = 'service_s6b4vti';
+		const templateID = 'template_gj05f0l';
+   
+		emailjs.sendForm(serviceID, templateID, this)
+			.then(() => {
+				alert('Sent');
+				this.reset();
+			}, (err) => {
+				alert('Error, write to us');
+			});
+		});
+		
+		document.getElementById('burgerMenuButton').addEventListener('click', function() {
+        document.getElementById('navMenu').classList.toggle('hidden');
+    });
+	</script>
 </html>
