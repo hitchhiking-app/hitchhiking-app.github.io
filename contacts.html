@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hitchhiking – one platform for real world mobility</title>
+    <title>Contact - Hitchhiking, mobility platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-white text-[#0a0a0a] font-[Montserrat]">
     <header class="max-w-[1200px] mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-	<h3 class="text-[#25A8D9] font-bold text-xl">
-		<a href="https://hitchhiking.app" class="no-underline text-[#25A8D9]">
-			hitchhiking
-		</a>
-	</h3>
+			<h3 class="text-[#25A8D9] font-bold text-xl">
+				<a href="https://hitchhiking.app" class="no-underline text-[#25A8D9]">
+					hitchhiking
+				</a>
+			</h3>
+			
+			<div class="md:hidden flex items-center" id="burgerMenuButton">
+				<button class="flex flex-col gap-1">
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+					<span class="w-6 h-0.5 bg-[#0a0a0a]"></span>
+				</button>
+			</div>
 
-  <nav class="flex-1 flex flex-col md:flex-row justify-center items-center gap-4">
-    <a href="https://hitchhiking.app" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Home</a>
-    <a href="https://hitchhiking.app/hitchhiking.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">hitchhiking</a>
-    <a href="https://hitchhiking.app/corpohiking.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">corpohiking</a>
-    <a href="https://hitchhiking.app/contacts.html" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Contact</a>
-  </nav>
-  <a href="https://hitchhiking.app/contacts.html" class="px-6 py-2 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all whitespace-nowrap shadow-lg">Stay updated</a>
-</header>
+			<nav class="flex-1 md:flex flex-col md:flex-row justify-center items-center gap-4 hidden" id="navMenu">
+				<a href="https://hitchhiking.app" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Home</a>
+				<a href="https://hitchhiking.app/hitchhiking" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">hitchhiking</a>
+				<a href="https://hitchhiking.app/corpohiking" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">corpohiking</a>
+				<a href="https://hitchhiking.app/contacts" class="text-[#0a0a0a] text-sm font-medium hover:font-bold">Contact</a>
+			</nav>
+		
+			<a href="https://hitchhiking.app/contacts.html" class="px-6 py-2 bg-[#25A8D9] text-white text-sm font-medium rounded-full hover:bg-[#1e90c7] transition-all whitespace-nowrap shadow-lg">Stay updated</a>
+		</header>
 
-<section id="relume" class="relative px-[5%] py-16 md:py-24 lg:py-28">
+<section class="relative px-[5%] py-16 md:py-24 lg:py-28">
   <div class="relative z-10 container">
     <div class="flex items-center">
       <div class="w-full max-w-md">
-        <h3 class="mb-5 text-white text-4xl leading-[1.2] font-bold text-text-alternative md:mb-6 md:text-4xl lg:text-4xl">
+        <h3 class="mb-5 text-white text-3xl leading-[1.2] font-bold text-text-alternative md:mb-6 md:text-4xl lg:text-4xl">
           Connect with Us
         </h3>
       </div>
@@ -44,7 +53,7 @@
   </div>
 </section>
 
-<section id="relume" class="px-[5%] py-16 md:py-24 lg:py-28">
+<section class="px-[7%] lg:px-[5%] py-16 md:py-24 lg:py-28">
   <div class="container">
     <div class="grid auto-cols-fr grid-cols-1 items-center gap-x-12 gap-y-12 md:grid-cols-3 md:gap-y-16">
     <div class="flex flex-col items-center justify-start text-center">
@@ -57,7 +66,7 @@
             Linkedin
         </h3>
         <p class="mb-5 md:mb-6">Main channel with weekly updates and news</p>
-        <a class="font-bold underline" href="#">Linkedin page</a>
+        <a class="font-bold underline" href="https://www.linkedin.com/company/hitchhiking/" target="_blank">Linkedin page</a>
     </div>
     <div class="flex flex-col items-center justify-start text-center">
         <div class="mb-5 lg:mb-6">
@@ -69,7 +78,7 @@
             Telegram
         </h3>
         <p class="mb-5 md:mb-6">More news, communication channel with team</p>
-        <a class="font-bold underline" href="#">Telegram channel</a>
+        <a class="font-bold underline" href="https://t.me/hitchhiking.app" target="_blank">Telegram channel</a>
     </div>
     <div class="flex flex-col items-center justify-start text-center">
         <div class="mb-5 lg:mb-6">
@@ -86,7 +95,7 @@
   </div>
 </section>
 
-<section id="relume" class="px-[5%] lg:px-[12.5%] py-16 md:py-24 lg:py-20">
+<section class="px-[5%] lg:px-[12.5%] py-16 md:py-24 lg:py-20">
   <div class="container">
     <div
       class="grid grid-cols-1 items-start gap-y-12 md:grid-flow-row md:grid-cols-2 md:gap-x-12 lg:grid-flow-col lg:gap-x-20 lg:gap-y-16"
@@ -140,7 +149,7 @@
           </div>
         </div>
       </div>
-      <form class="grid grid-cols-1 grid-rows-[auto_auto] gap-6">
+      <form class="grid grid-cols-1 grid-rows-[auto_auto] gap-6" id="form-send">
     <div class="grid w-full items-center">
         <label
             class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 mb-2"
@@ -151,6 +160,7 @@
                 type="text"
                 class="rounded-[1.75rem] flex size-full py-2 align-middle transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-[#25A8D9] min-h-11 px-3"
                 id="name"
+				name="name"
             />
         </div>
     </div>
@@ -164,6 +174,7 @@
                 type="email"
                 class="rounded-[1.75rem] flex size-full py-2 align-middle transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-[#25A8D9] min-h-11 px-3"
                 id="email"
+				name="email"
             />
         </div>
     </div>
@@ -176,25 +187,16 @@
             class="rounded-[1.75rem] flex w-full border border-[#25A8D9] p-3 placeholder:text-neutral focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 min-h-[11.25rem] overflow-auto"
             id="message"
             placeholder="Type your message..."
+			name="message"
         ></textarea>
     </div>
+	
     <div class="mb-3 flex items-center space-x-2 text-sm md:mb-4">
-        <button
-            type="button"
-            role="checkbox"
-            aria-checked="false"
-            data-state="unchecked"
-            value="on"
-            class="size-[1.125rem] border border-[#25A8D9] transition-all duration-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-[#25A8D9] data-[state=checked]:text-white"
-            id="terms"
-        ></button>
         <input
-            type="checkbox"
-            aria-hidden="true"
-            style="transform:translateX(-100%);position:absolute;pointer-events:none;opacity:0;margin:0"
-            tabindex="-1"
-            value="on"
-        />
+        type="checkbox"
+        id="terms"
+        class="w-4 h-4 border-2 border-[#25A8D9] rounded-sm checked:bg-[#25A8D9] checked:border-[#25A8D9] focus:ring-0 transition-all"
+      />
         <label
             class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
             for="terms"
@@ -214,51 +216,51 @@
   </div>
 </section>
 
-    <footer id="relume" class="px-[5%] py-12 md:py-18 lg:py-20 bg-[#032B3F] text-white">
-        <div class="container">
-            <div class="grid grid-cols-1 items-start justify-between gap-x-[8vw] gap-y-12 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:grid-cols-[1fr_0.5fr] lg:pb-20">
-                <div class="flex flex-col items-start gap-3 text-white">
-						<a href="https://hitchhiking.app" class="text-white text-sm font-medium hover:underline">Home</a>
-						<a href="https://hitchhiking.app/hitchhiking.html" class="text-white text-sm font-medium hover:underline">hitchhiking</a>
-						<a href="https://hitchhiking.app/corpohiking.html" class="text-white text-sm font-medium hover:underline">corpohiking</a>
-						<a href="https://hitchhiking.app/contacts.html" class="text-white text-sm font-medium hover:underline">Contact</a>
+    <footer class="px-[5%] py-12 md:py-18 lg:py-20 bg-[#032B3F] text-white">
+			<div class="container">
+				<div class="grid grid-cols-1 items-start justify-between gap-x-[8vw] gap-y-12 pb-12 sm:gap-y-10 md:gap-y-14 md:pb-18 lg:grid-cols-[1fr_0.5fr] lg:pb-20">
+					<div class="flex flex-col items-start gap-3 text-white">
+						<a href="https://hitchhiking.app" class="text-white text-sm font-medium hover:text-[#25A8D9]">Home</a>
+						<a href="https://hitchhiking.app/hitchhiking.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">hitchhiking</a>
+						<a href="https://hitchhiking.app/corpohiking.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">corpohiking</a>
+						<a href="https://hitchhiking.app/contacts.html" class="text-white text-sm font-medium hover:text-[#25A8D9]">Contact</a>
 					</div>
 
-                <div class="max-w-md lg:min-w-[25rem]">
-                    <p class="mb-3 font-semibold md:mb-4">Subscribe</p>
-                    <form class="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-y-4 md:gap-4">
-                        <div class="relative flex w-full items-center">
-                            <input
-                                type="email"
-                                class="rounded-[1.75rem] flex size-full py-2 align-middle transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-white bg-[#052F41] text-white placeholder:text-gray-300 min-h-11 px-3"
-                                id="email"
-                                placeholder="Enter your email"
-                                value=""
-                            />
-                        </div>
-                        <button
-                            class="rounded-[1.75rem] inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-white text-white bg-[#052F41] hover:bg-[#1e90c7] px-5 py-2"
-                            title="Subscribe"
-                        >
-                            Subscribe
-                        </button>
-                    </form>
-                    <p class="text-xs">By subscribing you agree to with our Privacy Policy</p>
-                </div>
-            </div>
-            <div class="h-px w-full bg-white/20"></div>
-            <div class="flex flex-col items-start justify-start pt-6 pb-4 text-sm md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
-                <ul class="grid grid-flow-row grid-cols-[max-content] gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center">
-                    <li class="underline decoration-black underline-offset-1">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li class="underline decoration-black underline-offset-1">
-                        <a href="#">Cookies Settings</a>
-                    </li>
-                </ul>
-                <p>© 2025 Hitchhiking. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
+					<div class="max-w-md lg:min-w-[25rem]">
+						<p class="mb-3 font-semibold md:mb-4">Subscribe</p>
+						<form class="mb-3 grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-[1fr_max-content] sm:gap-y-4 md:gap-4" id="form">
+							<div class="relative flex w-full items-center">
+								<input
+									type="email"
+									class="rounded-[1.75rem] flex size-full py-2 align-middle transition-all duration-200 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 border border-white bg-[#052F41] text-white placeholder:text-gray-300 min-h-11 px-3"
+									id="email"
+									placeholder="Enter your email"
+									value=""
+									name="email"
+								/>
+							</div>
+							<button
+								type="submit"
+								class="rounded-[1.75rem] inline-flex gap-3 items-center justify-center whitespace-nowrap transition-all duration-200 ease-in-out disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none border border-white text-white bg-[#052F41] hover:bg-[#1e90c7] px-5 py-2"
+								title="Subscribe"
+							>Subscribe</button>
+						</form>
+						<p class="text-xs text-gray-300">By subscribing you agree with our Privacy Policy</p>
+					</div>
+				</div>
+
+				<div class="h-px w-full bg-white/20"></div>
+
+				<div class="flex flex-col items-start justify-start pt-6 pb-4 text-sm text-white md:flex-row md:items-center md:justify-between md:pt-8 md:pb-0 md:text-center">
+					<ul class="grid grid-flow-row grid-cols-[max-content] gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0 lg:justify-center">
+						<li><a href="privacy_policy.md" target="_blank" class="hover:text-[#25A8D9] transition-colors">Privacy Policy</a></li>
+						<li><a href="cookies_settings.md" target="_blank" class="hover:text-[#25A8D9] transition-colors">Cookies Settings</a></li>
+					</ul>
+					<p class="text-sm text-gray-400 mt-4 md:mt-0">© 2025 Hitchhiking. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+    </body>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </html>

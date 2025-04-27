@@ -58,31 +58,31 @@
 		<section class="px-[0%] pt-0 pb-24 overflow-hidden">
 			<div class="flex flex-col gap-5">
 				<div class="flex flex-wrap md:flex-nowrap justify-start md:justify-start gap-5 overflow-hidden">
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh1.png" alt="Image 1" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh4.png" alt="Image 2" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh3.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh6.png" alt="Image 4" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
 				</div>
 
 				<div class="flex flex-wrap md:flex-nowrap justify-end md:justify-end gap-5 overflow-hidden">
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh6.png" alt="Image 5" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh2.png" alt="Image 6" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh5.png" alt="Image 7" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
-					<div class="relative w-[48%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
+					<div class="relative w-[47%] md:w-[380px] aspect-[3.25/2] overflow-hidden shrink-0 rounded-[1rem]">
 						<img src="hh7.png" alt="Image 8" class="absolute inset-0 w-full h-full object-cover" />
 					</div>
 				</div>
@@ -126,7 +126,7 @@
   <div class="container">
     <div class="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
       <div>
-        <div class="mb-5 md:mb-6 text-4xl">👍</div>
+        <div class="mb-5 md:mb-6 text-3xl lg:text-4xl">👍</div>
         <h2 class="mb-4 text-2xl md:text-4xl lg:text-4xl font-bold">
           Discover the routes and delivery with <span class="text-[#25A8D9]">hitchhiking</span>
         </h2>
@@ -153,7 +153,7 @@
         <img src="hh8.png" class="w-full rounded-[3rem] object-cover"/>
       </div>
       <div class="order-1 md:order-2">
-        <div class="mb-5 md:mb-6 text-4xl">💼</div>
+        <div class="mb-5 md:mb-6 text-3xl lg:text-4xl">💼</div>
         <h2 class="mb-4 text-2xl md:text-4xl lg:text-4xl font-bold">
           Organize flexible group travels with <span class="text-[#3E5D6A]">corpohiking</span>
         </h2>
@@ -297,6 +297,7 @@
 									id="email"
 									placeholder="Enter your email"
 									value=""
+									name="email"
 								/>
 							</div>
 							<button
@@ -321,24 +322,6 @@
 			</div>
 		</footer>
     </body>
-	<script type="text/javascript">
-		document.getElementById('form').addEventListener('submit', function(event) {
-		event.preventDefault();
-
-		const serviceID = 'service_s6b4vti';
-		const templateID = 'template_gj05f0l';
-   
-		emailjs.sendForm(serviceID, templateID, this)
-			.then(() => {
-				alert('Sent');
-				this.reset();
-			}, (err) => {
-				alert('Error, write to us');
-			});
-		});
-		
-		document.getElementById('burgerMenuButton').addEventListener('click', function() {
-			document.getElementById('navMenu').classList.toggle('hidden');
-		});
-	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </html>
