@@ -14,8 +14,8 @@ emailjs.init({
 document.getElementById('form').addEventListener('submit', function(event) {
 event.preventDefault();
 
-const serviceID = 'service_s6b4vti';
-const templateID = 'template_gj05f0l';
+const serviceID = 'service_mt2n0ij';
+const templateID = 'template_74llryj';
    
 emailjs.sendForm(serviceID, templateID, this)
 	.then(() => {
@@ -29,7 +29,7 @@ emailjs.sendForm(serviceID, templateID, this)
 document.getElementById('form-send').addEventListener('submit', function(event) {
 event.preventDefault();
 
-const serviceID = 'service_s6b4vti';
+const serviceID = 'service_mt2n0ij';
 const templateID2 = 'template_74llryj';
 
 if (!document.getElementById('terms').checked) { 
@@ -43,4 +43,5 @@ emailjs.sendForm(serviceID, templateID2, this)
 	}, (err) => {
 		alert('Error, write email to us');
 	});
+
 });
